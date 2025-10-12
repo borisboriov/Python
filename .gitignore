@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.venv
+venv/
+ENV/
+env/
+
+# PyCharm - игнорируем только личные настройки
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/usage.statistics.xml
+.idea/shelf/
+.idea/dictionaries/
+.idea/**/contentModel.xml
+.idea/**/caches/
+
+# macOS
+.DS_Store
