@@ -23,3 +23,5 @@ env/
 
 # macOS
 .DS_Store
+Python.iml
+misc.xml
