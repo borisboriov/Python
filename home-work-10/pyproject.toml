@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "student-crud-api"
+version = "1.0.0"
+description = "FastAPI CRUD application for student management"
+authors = ["Boris <boris@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+fastapi = "^0.104.1"
+uvicorn = {extras = ["standard"], version = "^0.24.0"}
+sqlalchemy = "^2.0.23"
+pymysql = "^1.1.0"
+alembic = "^1.12.1"
+pydantic = "^2.5.0"
+pydantic-settings = "^2.1.0"
+python-dotenv = "^1.0.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.3"
+httpx = "^0.25.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
