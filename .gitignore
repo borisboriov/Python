@@ -1,27 +1,60 @@
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# PyCharm
+.idea/
+*.iml
+
 # Python
 __pycache__/
 *.py[cod]
 *$py.class
 *.so
 .Python
-build/
-dist/
-*.egg-info/
-.venv
+env/
 venv/
 ENV/
-env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
 
-# PyCharm - игнорируем только личные настройки
-.idea/workspace.xml
-.idea/tasks.xml
-.idea/usage.statistics.xml
-.idea/shelf/
-.idea/dictionaries/
-.idea/**/contentModel.xml
-.idea/**/caches/
+# Poetry
+poetry.lock
 
-# macOS
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# IDE
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
 .DS_Store
 .env
 poetry.lock
+Thumbs.db
+
+# Logs
+*.log
+logs/
