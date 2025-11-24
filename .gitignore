@@ -51,6 +51,8 @@ poetry.lock
 
 # OS
 .DS_Store
+.env
+poetry.lock
 Thumbs.db
 
 # Logs
