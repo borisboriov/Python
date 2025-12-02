@@ -3,6 +3,7 @@ name = "student-crud-api"
 version = "1.0.0"
 description = "FastAPI CRUD application for student management"
 authors = ["Boris <boris@example.com>"]
+packages = [{include = "app"}]
 
 [tool.poetry.dependencies]
 python = "^3.9"

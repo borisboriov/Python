@@ -1,9 +1,20 @@
 """
 Data loading script for populating the students table from CSV
-Run this once after creating the database schema
+Creates the database schema if it doesn't exist, then loads data
+Run this once after starting the database
 """
 import csv
-from main import Session, Student
+from main import Session, Student, engine, Base
+
+
+def create_tables():
+    """Create all tables defined in Base metadata"""
+    try:
+        Base.metadata.create_all(engine)
+        print("✅ Database tables created successfully!")
+    except Exception as e:
+        print(f"❌ Error creating tables: {e}")
+        raise
 
 
 def load_students_from_csv(csv_file='students.csv'):
@@ -48,5 +59,10 @@ def load_students_from_csv(csv_file='students.csv'):
 
 
 if __name__ == "__main__":
-    print("🚀 Loading students from CSV...\n")
+    print("🚀 Starting database setup and data loading...\n")
+
+    print("📋 Creating database tables...")
+    create_tables()
+
+    print("\n📂 Loading students from CSV...\n")
     load_students_from_csv()
